@@ -9,4 +9,4 @@ Distributed under the CC license. See LICENSE for more information.
 
 Contributing
 
-Fork it (https://github.com/EnigmaticZee/VueJSCourse)
+Fork it (https://github.com/EnigmaticZee/iOS11Core)
