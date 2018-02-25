@@ -29,6 +29,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func askButtonPressed(_ sender: UIButton) {
+        randomBallFx()
+    }
+    
+    func randomBallFx(){
         randomBall = Int(arc4random_uniform(5))
         imageView.image = UIImage(named: ballArray[randomBall])
     }
