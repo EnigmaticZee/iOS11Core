@@ -23,10 +23,12 @@ class ViewController: UIViewController {
     }
     
     func calculateBMI() -> String {
-        let numone = NSString(string: weightKg.text!).doubleValue
-        let num2 = NSString(string: heightM.text!).doubleValue
+        //let numone = NSString(string: weightKg.text!).doubleValue
+        let numone = Double(weightKg.text!)
+        //let num2 = NSString(string: heightM.text!).doubleValue
+        let num2 = Double(heightM.text!)
         var message = ""
-        let calC = numone/pow(num2, 2)
+        let calC = numone!/pow(num2!, 2)
         if (calC > 25){
             message = "Oi!!! mate, you are overweight!"
         }
@@ -36,7 +38,7 @@ class ViewController: UIViewController {
         else {
             message = "You are underweight"
         }
-        let formatted = String(format: "$.2f", calC)
+        let formatted = String(format: "%.2f", calC)
         return "Your BMI is \(formatted) and \(message)"
     }
 
