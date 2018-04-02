@@ -1,17 +1,30 @@
 import UIKit
 
-func bearBottle(number: Int){
-        for number in (1...number).reversed(){
-            if number > 1 {
-                print("\n\(number) bottles of the bear on the wall, \(number) bottles of beer. \nTake one down and pass it around, \(number-1) bottles of bear on the wall\n")
-            }
-            else if number == 1
-            {
-                print("\n\(number) bottles of the bear on the wall, \(number) bottles of beer. \nTake one down and pass it around, no bottles of bear on the wall\n")
-            }
+func bearBottleLyrics(number: Int){
+    for number in (1...number).reversed(){
+        if number > 1 {
+            print("\n\(number) bottles of the bear on the wall, \(number) bottles of beer. \nTake one down and pass it around, \(number-1) bottles of bear on the wall\n")
         }
+        else if number == 1 {
+            print("\n\(number) bottles of the bear on the wall, \(number) bottles of beer. \nTake one down and pass it around, no bottles of bear on the wall\n")
+        }
+    }
 }
-bearBottle(number: 99)
+
+bearBottleLyrics(number: 2)
+
+//func bearBottle(number: Int){
+//        for number in (1...number).reversed(){
+//            if number > 1 {
+//                print("\n\(number) bottles of the bear on the wall, \(number) bottles of beer. \nTake one down and pass it around, \(number-1) bottles of bear on the wall\n")
+//            }
+//            else if number == 1
+//            {
+//                print("\n\(number) bottles of the bear on the wall, \(number) bottles of beer. \nTake one down and pass it around, no bottles of bear on the wall\n")
+//            }
+//        }
+//}
+//bearBottle(number: 99)
 
 
 //String = "\n\(number) bottles of the bear on the wall, \(number) bottles of beer. \nTake one down and pass it around, \(number-1) bottles of bear on the wall\n"

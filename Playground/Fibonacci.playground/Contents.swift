@@ -1,5 +1,19 @@
 import UIKit
 
+func fibonacci(number: Int){
+    var n1 = 0
+    var n2 = 1
+    print(0)
+    print(1)
+    for _ in 0...number {
+        let sum = n1 + n2
+        print(sum)
+        n1 = n2
+        n2 = sum
+    }
+}
+fibonacci(number: 4)
+
 func fibo(n : Int) {
     var n1 = 0
     var n2 = 1
