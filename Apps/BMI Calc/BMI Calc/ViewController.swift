@@ -22,25 +22,25 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-//    func calculateBMI() -> String {
-//        //let numone = NSString(string: weightKg.text!).doubleValue
-//        let numone = Double(weightKg.text!)
-//        //let num2 = NSString(string: heightM.text!).doubleValue
-//        let num2 = Double(heightM.text!)
-//        var message = ""
-//        let calC = numone!/pow(num2!, 2)
-//        if (calC > 25){
-//            message = "Oi!!! mate, you are overweight!"
-//        }
-//        else if (calC > 18.5 && calC < 25){
-//            message = "Awesome! your weight is normal"
-//        }
-//        else {
-//            message = "You are underweight"
-//        }
-//        let formatted = String(format: "%.2f", calC)
-//        return "Your BMI is \(formatted) and \(message)"
-//    }
+    func calculateBMI() -> String {
+        //let numone = NSString(string: weightKg.text!).doubleValue
+        let numone = Double(weightKg.text!)
+        //let num2 = NSString(string: heightM.text!).doubleValue
+        let num2 = Double(heightM.text!)
+        var message = ""
+        let calC = numone!/pow(num2!, 2)
+        if (calC > 25){
+            message = "Oi!!! mate, you are overweight!"
+        }
+        else if (calC > 18.5 && calC < 25){
+            message = "Awesome! your weight is normal"
+        }
+        else {
+            message = "You are underweight"
+        }
+        let formatted = String(format: "%.2f", calC)
+        return "Your BMI is \(formatted) and \(message)"
+    }
     
     
 
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
 
     @IBAction func calcBtnPressed(_ sender: UIButton)
     {
-//        resultLabel.text = calculateBMI()
+        resultLabel.text = calculateBMI()
     }
     
 }
